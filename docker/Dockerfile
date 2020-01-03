@@ -14,6 +14,7 @@ RUN chown -R www-data:www-data /app \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+WORKDIR /app
 RUN composer install
 
 RUN service cron start
