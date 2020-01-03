@@ -8,7 +8,6 @@ Thumbs.db
 # Config files #
 ##############
 config/.htpasswd
-config/servers.ini
 
 # Data files #
 ##############
