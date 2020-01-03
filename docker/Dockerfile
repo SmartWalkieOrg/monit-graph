@@ -12,4 +12,6 @@ COPY . /app
 RUN chown -R www-data:www-data /app \
 		&& a2enmod rewrite
 
+RUN service cron start
+
 CMD ["apache2-foreground"]
