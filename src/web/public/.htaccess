@@ -8,3 +8,8 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
+
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /app/.htpasswd
+Require valid-user
